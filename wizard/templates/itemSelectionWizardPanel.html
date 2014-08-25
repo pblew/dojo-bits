@@ -1,0 +1,71 @@
+<div>
+	<div class="wizardContent">
+		<table class="tableContainer-table">
+			<tr>
+				<td>
+					<h4>Available</h4>
+				</td>
+				<td>
+				</td>
+				<td>
+					<h4>Selected</h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="itemSelectionList"
+						data-dojo-type="dgrid/OnDemandGrid"
+					    data-dojo-mixins="dgrid/Selection,dgrid/extensions/DnD"
+					    data-dojo-attach-point="_availableItems"
+					    data-dojo-props="
+					        columns:{
+					            name:{
+					                sortable:true
+				                }
+				            },
+				            maxRowsPerPage:Infinity,
+				            minRowsPerPage:Infinity,
+				            noDataMessage:'${noItemsAvailablePrompt}',
+				            showHeader:false,
+				            sort:[
+				                {attribute:'name'}
+			                ]
+		                ">
+					</div>
+				</td>
+				<td style="width:2.5em;">
+					<button
+						data-dojo-type="dijit/form/Button"
+						data-dojo-attach-point="_addToSelectionButton"
+						data-dojo-props="disabled:true,title:'Add to selection'">&gt;</button>
+					<br>
+					<button
+						data-dojo-type="dijit/form/Button"
+						data-dojo-attach-point="_removeFromSelectionButton"
+						data-dojo-props="disabled:true,title:'Remove from selection'">&lt;</button>
+				</td>
+				<td>
+					<div class="itemSelectionList"
+					    data-dojo-type="dgrid/OnDemandGrid"
+						data-dojo-mixins="dgrid/Selection,dgrid/extensions/DnD"
+						data-dojo-attach-point="_selectedItems"
+						data-dojo-props="
+							columns:{
+							    name:{
+							        sortable:true
+							    }
+							},
+				            maxRowsPerPage:Infinity,
+				            minRowsPerPage:Infinity,
+				            noDataMessage:'${dragPrompt}',
+				            showHeader:false,
+							sort:[
+							    {attribute:'name'}
+							]
+						">
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
