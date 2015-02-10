@@ -7,10 +7,10 @@
 		Redirecting to D.O.H runner.
 		<script>
 			var runnerURL = '../libs/util/doh/runner.html';
-			// paths are relative to libs/dojo
+			// paths are relative to libs
 			var paths = [
-				'testroot,../../tests',
-				'dojo-bits,../..'
+				'testroot,../tests',
+				'dojo-bits,..'
 			].join(';');
 
 			var redirectPath = runnerURL + '?async=true&test=testroot/module' + '&paths=' + paths;
