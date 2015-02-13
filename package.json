@@ -1,0 +1,27 @@
+{
+	"name": "dojo-bits",
+	"version":"0.0.1",
+	"directories": {
+		"lib": "."
+	},
+	"main":"main",
+	"dependencies": {
+		"dojo":"~1.8.6",
+		"dojit":"~1.8.6"
+	},
+	"description": "Miscellaneous useful Dojo bits and pieces",
+	"licenses": [
+		 {
+				 "type": "AFLv2.1",
+				 "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
+		 },
+		 {
+				 "type": "BSD",
+				 "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+		 }
+	],
+	"bugs": "https://github.com/pblew/dojo-bits/issues",
+	"keywords": ["JavaScript", "Dojo", "Widget"],
+	"homepage": "https://github.com/pblew/dojo-bits",
+	"dojoBuild": "profile.js"
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DOH Unit Test Runner</title>
+	</head>
+	<body>
+		Redirecting to D.O.H runner.
+		<script>
+			var runnerURL = '../libs/util/doh/runner.html';
+			// paths are relative to libs
+			var paths = [
+				'testroot,../tests',
+				'dojo-bits,..'
+			].join(';');
+
+			var redirectPath = runnerURL + '?async=true&test=testroot/module' + '&paths=' + paths;
+			window.location.replace(redirectPath);
+		</script>
+	</body>
+</html>
